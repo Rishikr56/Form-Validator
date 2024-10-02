@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <div class=" w-1/2 m-56 p-7 rounded-lg">
+      <fomr>
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Enter Name" id="contact-name" onkeyup="validateName()"/>
+          <span class="text-red-600 font-bold gap-x-36" id="name-error"></span>
+        </div>
+        <div>
+          <label>Mobile No.</label>
+          <input type="number" placeholder="Enter your Mobile No" id="contact-phone" onkeyup="validatePhone()" />
+          <span class="text-red-600  font-bold gap-x-36" id="phone-error"></span>
+        </div>
+        <div>
+          <label>Father's Name</label>
+          <input type="text" placeholder="Enter Fathers Name" id="contact-fathers" onkeyup="validateFName()" />
+          <span class="text-red-600 font-bold gap-x-36" id="Fname-error"></span>
+        </div>
+        <div>
+          <button class="bg-blue-700 p-1.5 pr-5 pl-5 mt-5 rounded-lg text-white font-bold" type="submit">Submit</button>
+        </div>
+      </fomr>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Validation</title>
+</head>
+<body>
+    <h2>Name Validator</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="validateName()">Validate</button>
+    <p id="message"></p>
+
+    <script>
+        function validateName() {
+            const name = document.getElementById('nameInput').value;
+            const pattern = /^[A-Za-z]+\s[A-Za-z]+$/; // Updated pattern
+
+            const messageElement = document.getElementById('message');
+            if (name.match(pattern)) {
+                messageElement.innerText = "Valid name format!";
+                messageElement.style.color = "green";
+            } else {
+                messageElement.innerText = "Invalid name format. Please enter 'First Last'.";
+                messageElement.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>
